@@ -1,6 +1,6 @@
 .idea/
-*.zip
-*.zip.sha
+logstash-*.zip
+logstash-*.zip.sha
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Ruby template
