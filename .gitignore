@@ -2,7 +2,6 @@
 logstash-*.zip
 logstash-*.zip.sha
 
-# Created by .ignore support plugin (hsz.mobi)
 ### Ruby template
 *.gem
 *.rbc
