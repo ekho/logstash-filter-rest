@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'logstash-filter-rest2'
-  s.version = '0.5.4'
+  s.version = '0.5.5'
   s.licenses = ['Apache-2.0']
   s.summary = 'This filter requests data from a RESTful Web Service.'
   s.description = 'This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/logstash-plugin install logstash-filter-rest2. This gem is not a stand-alone program'
