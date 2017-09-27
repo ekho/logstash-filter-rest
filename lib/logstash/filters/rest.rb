@@ -128,6 +128,16 @@ class LogStash::Filters::Rest < LogStash::Filters::Base
   config :tag_on_rest_failure, :validate => :array, :default => ['_restfailure']
   config :tag_on_json_failure, :validate => :array, :default => ['_jsonparsefailure']
 
+  # If you need to use a custom truststore (`.jks`) specify that here. This does not work with .pem certs!
+  config :truststore, :validate => :path
+
+  # Specify the truststore password here.
+  # Note, most .jks files created with keytool require a password!
+  config :truststore_password, :validate => :password
+
+  # Specify the truststore type here. One of `JKS` or `PKCS12`. Default is `JKS`
+  config :truststore_type, :validate => :string, :default => "JKS"
+
   public
 
   def register
