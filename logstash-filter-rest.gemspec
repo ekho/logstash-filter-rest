@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = 'logstash-filter-rest2'
+  s.name = 'logstash-filter-rest-sbt'
   s.version = '0.5.5'
   s.licenses = ['Apache-2.0']
   s.summary = 'This filter requests data from a RESTful Web Service.'
