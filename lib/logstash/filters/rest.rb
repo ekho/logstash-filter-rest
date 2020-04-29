@@ -257,7 +257,11 @@ class LogStash::Filters::Rest < LogStash::Filters::Base
         end
       end
     else
-      event.set(@target, response.strip)
+      begin
+        event.set(@target, response.strip)
+      rescue
+        event.set(@target, @fallback)
+      end
     end
   end
 
